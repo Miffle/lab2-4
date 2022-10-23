@@ -19,7 +19,8 @@ COne &COne::operator=(const COne &args) {
 }
 
 void COne::print() const {
-    std::cout << "f = " << f << " ps = " << ps;
+    if(ps != nullptr){std::cout << "f = " << f << " ps = " << ps<<std::endl;}
+    else{std::cout << "f = " << f << " ps - null"<<std::endl;}
 }
 
 COne::~COne() {
