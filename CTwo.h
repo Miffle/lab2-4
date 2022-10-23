@@ -11,10 +11,7 @@ protected:
     string s;
     COne *p;
 public:
-    explicit CTwo();
-    CTwo(string S, COne &obj);
-    virtual ~CTwo();
-    void print();
+
 
 };
 

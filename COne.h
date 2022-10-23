@@ -3,28 +3,25 @@
 
 
 class COne {
+    friend class CTwo;
+
 protected:
     float f;
     char *ps;
 public:
-    explicit COne();
+    COne();
+
+    COne(float f, char *ps);
 
     COne(const COne &args);
 
-    COne(float F, char *Ps);
-
-    bool operator==(const COne &rhs) const;
-
-    bool operator!=(const COne &rhs) const;
-
-    float getF() const;
-
-    char *getPs() const;
+    COne &operator=(const COne &args);
 
     virtual ~COne();
 
-    void print();
-    friend class CTwo;
+    void print() const;
+
+
 };
 
 
