@@ -17,9 +17,9 @@ public:
 
     COne &operator=(const COne &args);
 
-    virtual ~COne();
-
     void print() const;
+
+    virtual ~COne();
 
 
 };

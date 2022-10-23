@@ -5,7 +5,7 @@
 using namespace std;
 
 int main() {
-    COne first, second(5.2, (char *)"dss");
-    first.print();
-    second.print();
+    COne b(5.3, (char *)"fsda");
+    CTwo a("dssdadsa", &b);
+    a.print();
 }

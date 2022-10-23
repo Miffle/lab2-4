@@ -11,8 +11,17 @@ protected:
     string s;
     COne *p;
 public:
+    CTwo();
 
+    CTwo(string s, COne *p);
 
+    CTwo(const CTwo &args);
+
+    CTwo &operator=(const CTwo &args);
+
+    void print() const;
+
+    virtual ~CTwo();
 };
 
 
