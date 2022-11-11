@@ -4,7 +4,7 @@
 
 #include "CTwo.h"
 
-class CThree : CTwo {
+class CThree : public CTwo{
 private:
     int trow;
 public:
@@ -14,7 +14,7 @@ public:
 
     CThree(const CThree &args, const CTwo& g);
 
-    void print() const;
+    virtual void print() const;
 
     virtual ~CThree();
 };

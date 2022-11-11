@@ -19,7 +19,7 @@ public:
 
     CTwo &operator=(const CTwo &args);
 
-    void print() const;
+    virtual void print() const;
 
     virtual ~CTwo();
 };
