@@ -1,12 +1,16 @@
 #include <iostream>
 #include "Complex.h"
+#include "array.h"
 
 using namespace std;
 
 void complex();
 
+void array();
+
 int main() {
     complex();
+    array();
     return 0;
 }
 
@@ -36,4 +40,11 @@ void complex() {
 
     resultComplex = FirstComplex.subtraction(SecondComplex);
     resultComplex.get_result();
+}
+
+void array() {
+    Array<int> a(10), b, c(b), d = {1, 2, 3, 4, 5};
+    std::cout << d.size() << ": ";
+    for (const auto x: d)
+        std::cout << x << ' ';
 }
